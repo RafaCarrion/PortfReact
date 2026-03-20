@@ -30,6 +30,23 @@ export const WorkshopsPage = () => {
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
+        
+        {/* ── SECCIÓN 2: IMAGEN + TEXTO ─────────────────────── */}
+        <Row className="sec_sp align-items-center">
+          <Col lg="6">
+            <img
+              src= {img_workshop1}  /* ← tu imagen */
+              alt="detalle"
+              className="img-fluid"
+            />
+          </Col>
+          <Col lg="6">
+            <h3 className="color_sec py-4">Un subtítulo</h3>
+            <p className="pd_longdesc">
+              Example of the workshop syllabus. Game audio implememtation in the game engine, Wwise, Fmod.
+            </p>
+          </Col>
+        </Row>
 
         {/* ── GALERÍA PRINCIPAL ─────────────────────────────── */}
         <Row className="sec_sp">
@@ -91,22 +108,7 @@ export const WorkshopsPage = () => {
           </Col>
         </Row>
         
-        {/* ── SECCIÓN 2: IMAGEN + TEXTO ─────────────────────── */}
-        <Row className="sec_sp align-items-center">
-          <Col lg="6">
-            <img
-              src= {img_workshop1}  /* ← tu imagen */
-              alt="detalle"
-              className="img-fluid"
-            />
-          </Col>
-          <Col lg="6">
-            <h3 className="color_sec py-4">Un subtítulo</h3>
-            <p className="pd_longdesc">
-              Example of the workshop syllabus. Game audio implememtation in the game engine, Wwise, Fmod.
-            </p>
-          </Col>
-        </Row>
+        
 
         {/* ── SECCIÓN 3: SOLO TEXTO ─────────────────────────── */}
         <Row className="sec_sp">
