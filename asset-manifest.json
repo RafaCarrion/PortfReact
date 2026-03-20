@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.ca9496ef.css",
-    "main.js": "/Portfolio/static/js/main.17bf082f.js",
+    "main.js": "/Portfolio/static/js/main.7925db81.js",
     "static/media/switch.png": "/Portfolio/static/media/switch.d972b49e017150f5d725.png",
     "static/media/berkleeWorkShop2.jpg": "/Portfolio/static/media/berkleeWorkShop2.e87167ce795c0102beb7.jpg",
     "static/media/berkleeWorkShop1.jpg": "/Portfolio/static/media/berkleeWorkShop1.f08b08a838a7184dc065.jpg",
     "index.html": "/Portfolio/index.html",
     "main.ca9496ef.css.map": "/Portfolio/static/css/main.ca9496ef.css.map",
-    "main.17bf082f.js.map": "/Portfolio/static/js/main.17bf082f.js.map"
+    "main.7925db81.js.map": "/Portfolio/static/js/main.7925db81.js.map"
   },
   "entrypoints": [
     "static/css/main.ca9496ef.css",
-    "static/js/main.17bf082f.js"
+    "static/js/main.7925db81.js"
   ]
 }
