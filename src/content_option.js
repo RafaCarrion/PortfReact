@@ -1,3 +1,6 @@
+import img_workshop1 from "./assets/images/berkleeWorkShop1.jpg";
+import img_switch from "./assets/images/switch.png";
+
 const logotext = "Rafa Carrion";
 const meta = {
     title: "Rafa Carrion",
@@ -92,8 +95,6 @@ const dataportfolio = [{
     },
 ];
 */
-import img_workshop1 from "./assets/images/berkleeWorkShop1.jpg";
-import img_switch from "./assets/images/switch.png";
 
 const dataportfolio = [
     {

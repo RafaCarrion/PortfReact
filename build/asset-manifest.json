@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/PortfReact/static/css/main.9dc272a3.css",
+    "main.js": "/PortfReact/static/js/main.0193b600.js",
+    "static/media/switch.png": "/PortfReact/static/media/switch.d972b49e017150f5d725.png",
+    "static/media/berkleeWorkShop2.jpg": "/PortfReact/static/media/berkleeWorkShop2.e87167ce795c0102beb7.jpg",
+    "static/media/berkleeWorkShop1.jpg": "/PortfReact/static/media/berkleeWorkShop1.f08b08a838a7184dc065.jpg",
+    "index.html": "/PortfReact/index.html",
+    "main.9dc272a3.css.map": "/PortfReact/static/css/main.9dc272a3.css.map",
+    "main.0193b600.js.map": "/PortfReact/static/js/main.0193b600.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9dc272a3.css",
+    "static/js/main.0193b600.js"
+  ]
+}
