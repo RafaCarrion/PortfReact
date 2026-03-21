@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Row, Col } from "react-bootstrap";
+import '../pages/portfoliodetail/style.css';
 
 const ImageGallery = ({ images, tags = [], githubUrl, demoUrl }) => {
   const [activeImg, setActiveImg] = useState(0);
@@ -28,12 +29,9 @@ const ImageGallery = ({ images, tags = [], githubUrl, demoUrl }) => {
       <Col lg="4" className="pd_sidebar">
         {tags.length > 0 && (
           <div className="pd_section">
-            <h5 className="pd_section_title">Tecnologías</h5>
-            <div className="pd_tags">
-              {tags.map((t, i) => (
-                <span key={i} className="pd_tag">{t}</span>
-              ))}
-            </div>
+             <p>En los workshops se ttrantan temas como implementación en el game engine.
+              Implementacion de middleware.
+             </p>
           </div>
         )}
 

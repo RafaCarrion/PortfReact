@@ -3,48 +3,38 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
 // ── Componentes reutilizables ──────────────────────────────
-import VideoSection from "../../components/VideoSection";
+import VideoGrid from "../../components/videogrid/videogrid";
 
 
 // ── Assets ────────────────────────────────────────────────
 import img1 from "../../assets/images/berkleeWorkShop1.jpg";
 import img2 from "../../assets/images/berkleeWorkShop1.jpg";
+// ── Videos Commercial ────────────────────────────────────────────────
 
+const videos = [
+  { videoId: "dQw4w9WgXcQ" },
+  { videoId: "kJQP7kiw5Fk" },
+  { videoId: "3JZ_D3ELwOQ" },
+];
 const images = [img1, img2];
 
-export default function VideoGamesPage() {
+export default function LinearMedia() {
   return (
     <HelmetProvider>
       <Container className="About-header">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Video Games</title>
+          <title>Linear Media</title>
         </Helmet>
 
         {/* TÍTULO */}
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="8">
-            <h1 className="display-4 mb-4">Videogames</h1>
+            <h1 className="display-4 mb-4">Linear Media</h1>
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
-
-        {/* VIDEO + DESCRIPCIÓN CORTA */}
-        <VideoSection
-          videoId="4qwmdyZns3Q"
-          title="Gold Gold Adventure Gold"
-          description="El oro domina el mundo. Disfruta del caos de la construcción de ciudades..."
-          steamUrl="https://store.steampowered.com/app/3133650"
-          tags={["Unity 3D", "C#", "Wwise"]}
-        />
-        <VideoSection
-          videoId="q7JfhZ5yVT0?si=sL7sc2XzdNkCRCuH"
-          title="Islanders"
-          description="Esto es ISLANDERS: New Shores. Construye un retiro isleño en un mundo tranquilo y minimalista. Disfruta de las nuevas y emocionantes funciones que mantienen el encanto de siempre a la vez que inspiran una creatividad renovada."
-          steamUrl="https://store.steampowered.com/app/2368930/ISLANDERS_New_Shores/"
-          tags={["Unity 3D", "C#", "Fmod"]}
-        />
-    
+        <VideoGrid videos={videos} />
         {/* VOLVER */}
         <Row className="mb-5">
           <Col>
@@ -53,9 +43,9 @@ export default function VideoGamesPage() {
             </Link>
           </Col>
         </Row>
-            
+
       </Container>
-      
+
     </HelmetProvider>
   );
 }

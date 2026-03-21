@@ -1,14 +1,18 @@
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
 // ── Componentes reutilizables ──────────────────────────────
 import VideoSection from "../../components/VideoSection";
-
+import TextSection from "../../components/TextSection";
+import ImageGallery from "../../components/ImageGallery";
+import WideImage from "../../components/WideImage";
 
 // ── Assets ────────────────────────────────────────────────
 import img1 from "../../assets/images/berkleeWorkShop1.jpg";
 import img2 from "../../assets/images/berkleeWorkShop1.jpg";
+import imgWide from "../../assets/images/berkleeWorkShop1.jpg";
 
 const images = [img1, img2];
 
@@ -35,7 +39,7 @@ export default function VideoGamesPage() {
           title="Gold Gold Adventure Gold"
           description="El oro domina el mundo. Disfruta del caos de la construcción de ciudades..."
           steamUrl="https://store.steampowered.com/app/3133650"
-          tags={["Unity 3D", "C#", "Wwise"]}
+          tags={["Unity 3D", "C#", "Wwise", "Git"]}
         />
         <VideoSection
           videoId="q7JfhZ5yVT0?si=sL7sc2XzdNkCRCuH"
@@ -44,7 +48,31 @@ export default function VideoGamesPage() {
           steamUrl="https://store.steampowered.com/app/2368930/ISLANDERS_New_Shores/"
           tags={["Unity 3D", "C#", "Fmod"]}
         />
-    
+        {/* GALERÍA + SIDEBAR */}
+        <ImageGallery
+          images={images}
+          tags={["Unity 3D", "C#", "Wwise", "Fmod"]}
+          githubUrl="https://github.com/tuusuario/gold-game"
+        // demoUrl="https://tu-demo.com"   ← descomenta si tienes demo
+        />
+        {/* DESCRIPCIÓN LARGA */}
+        <TextSection title="Sobre el proyecto">
+          <p>Escribe aquí la descripción principal del proyecto.</p>
+        </TextSection>
+
+        {/* OTRO APARTADO CON LISTA */}
+        <TextSection title="Otro apartado">
+          <p>Más texto aquí.</p>
+          <ul style={{ color: "var(--text-color)", lineHeight: "2" }}>
+            <li>Punto 1</li>
+            <li>Punto 2</li>
+            <li>Punto 3</li>
+          </ul>
+        </TextSection>
+
+        {/* IMAGEN ANCHA */}
+        <WideImage src={imgWide} title="Galería extra" alt="panorámica" />
+
         {/* VOLVER */}
         <Row className="mb-5">
           <Col>

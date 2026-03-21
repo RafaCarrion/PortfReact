@@ -16,7 +16,7 @@
 }
 
 .pd_main_img img:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 
 /* ── Miniaturas ── */
@@ -73,6 +73,7 @@
     border: 1px solid var(--secondary-color);
     color: var(--text-color);
     letter-spacing: 0.05em;
+    margin-right: 8px;
 }
 
 /* ── Botones de links ── */
@@ -125,4 +126,19 @@
     .pd_sidebar {
         margin-top: 2rem;
     }
+}
+/* ── Animaciones ── */
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.20); }
+  100% { transform: scale(1); }
+}
+
+.pd_steam_icon {
+  animation: pulse 1.5s infinite;
+}
+.pd_steam_icon:hover {
+  transform: scale(1.2);
+  color: #1b9fff; /* azul estilo Steam */
 }

@@ -1,5 +1,6 @@
 .sec_sp {
     margin-bottom: calc(3rem + 5.128vw)
+    colo
 }
 
 .table td,
@@ -41,7 +42,7 @@
     right: 8px;
     font-size: 17px;
     font-weight: bold;
-    font-style: italic;
+    font-style:italic;
     color: var(--text-color);
 }
 
