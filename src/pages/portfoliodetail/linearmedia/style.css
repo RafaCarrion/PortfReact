@@ -1,0 +1,144 @@
+/* ── Imagen principal ── */
+.pd_main_img {
+    width: 100%;
+    overflow: hidden;
+    background: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.pd_main_img img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.pd_main_img img:hover {
+    transform: scale(1.05);
+}
+
+/* ── Miniaturas ── */
+.pd_thumbnails {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.pd_thumb {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    opacity: 0.6;
+    transition: opacity 0.2s, border-color 0.2s;
+}
+
+.pd_thumb:hover,
+.pd_thumb.active {
+    opacity: 1;
+    border-color: var(--text-color);
+}
+
+/* ── Sidebar ── */
+.pd_sidebar {
+    padding-top: 1rem;
+}
+
+.pd_section {
+    margin-bottom: 2rem;
+}
+
+.pd_section_title {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin-bottom: 0.75rem;
+}
+
+/* ── Tags de tecnologías ── */
+.pd_tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.pd_tag {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border: 1px solid var(--secondary-color);
+    color: var(--text-color);
+    letter-spacing: 0.05em;
+    margin-right: 8px;
+}
+
+/* ── Botones de links ── */
+.pd_link_btn {
+    display: block;
+    font-size: 0.9rem;
+    padding: 6px 0;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--secondary-color);
+    margin-bottom: 0.5rem;
+    transition: opacity 0.2s;
+}
+
+.pd_link_btn:hover {
+    opacity: 0.6;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* ── Descripción larga ── */
+.pd_longdesc {
+    font-size: 1rem;
+    line-height: 1.8;
+    opacity: 0.85;
+}
+
+/* ── Volver ── */
+.pd_back_link {
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--secondary-color);
+    padding-bottom: 2px;
+    transition: opacity 0.2s;
+}
+
+.pd_back_link:hover {
+    opacity: 0.6;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .pd_main_img img {
+        height: 260px;
+    }
+
+    .pd_sidebar {
+        margin-top: 2rem;
+    }
+}
+/* ── Animaciones ── */
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.20); }
+  100% { transform: scale(1); }
+}
+
+.pd_steam_icon {
+  animation: pulse 1.5s infinite;
+}
+.pd_steam_icon:hover {
+  transform: scale(1.2);
+  color: #1b9fff; /* azul estilo Steam */
+}

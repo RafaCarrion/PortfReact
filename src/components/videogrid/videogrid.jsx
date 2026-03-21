@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./style.css";
-
-const VideoItem = ({ videoId }) => {
+const VideoItem = ({ videoId, imageThumbnail }) => {
   const [isZoomed, setIsZoomed] = useState(false);
 
   const handleClick = (e) => {
@@ -13,7 +12,7 @@ const VideoItem = ({ videoId }) => {
     setIsZoomed(false);
   };
 
-  const thumbnail = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+  const thumbnail = imageThumbnail;
 
   return (
     <>
@@ -22,25 +21,25 @@ const VideoItem = ({ videoId }) => {
         <div
           className="video_placeholder"
           style={{ backgroundImage: `url(${thumbnail})` }}
-        >
-          <button className="zoom_button">▶</button>
-        </div>
+        />
       </div>
 
-      {/* Modal con YouTube */}
-      {isZoomed && (
-        <div className="video_modal" onClick={handleClose}>
-          <div
-            className="ratio ratio-16x9 video_zoom_container"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <iframe
-              src={`https://www.youtube-nocookie.com/embed/${videoId}?rel=0&autoplay=1`}
-              allowFullScreen
-            />
-          </div>
+      {/* Modal con YouTube */ }
+  {
+    isZoomed && (
+      <div className="video_modal" onClick={handleClose}>
+        <div
+          className="ratio ratio-16x9 video_zoom_container"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <iframe
+            src={`https://www.youtube-nocookie.com/embed/${videoId}?rel=0&autoplay=1`}
+            allowFullScreen
+          />
         </div>
-      )}
+      </div>
+    )
+  }
     </>
   );
 };

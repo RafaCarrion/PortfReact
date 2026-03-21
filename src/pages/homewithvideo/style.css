@@ -1,0 +1,152 @@
+/* Vídeo fullscreen */
+.home_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Esto es necesario, pero asegúrate de lo siguiente */
+  z-index: 1;
+}
+/* Side nav*/
+.side-nav {
+  position: fixed;
+  right: 40px; /* Distancia desde el borde derecho */
+  top: 50%;
+  transform: translateY(-50%); /* Lo centra verticalmente */
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Espacio entre los links */
+  z-index: 10; /* Por encima de todo (video, overlay y texto) */
+}
+
+.side-nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255); /* Color blanco tenue */
+  font-family: 'Arial', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  writing-mode: vertical-rl; /* Gira el texto para que sea vertical */
+  text-transform: uppercase;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.side-nav a:hover {
+  color: white; /* Resalta al pasar el mouse */
+  transform: scale(1.1); /* Efecto sutil de crecimiento */
+}
+/* --- ESTILOS BARRA SOCIAL IZQUIERDA (LOGOS) --- */
+.social-sidebar {
+  position: fixed;
+  left: 30px; /* Distancia desde el borde izquierdo */
+  top: 50%;
+  transform: translateY(-50%); /* Centrado vertical perfecto */
+  display: flex;
+  flex-direction: column; /* Columna vertical */
+  gap: 25px; /* Espacio entre logos */
+  z-index: 10; /* Por encima del video y overlay */
+}
+
+.social-sidebar a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5); /* Color blanco tenue por defecto */
+  font-size: 1.5rem; /* Tamaño de los logos (aprox 24px) */
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: flex; /* Asegura que el icono esté centrado dentro del enlace */
+  align-items: center;
+  justify-content: center;
+}
+/* Bloquear scroll */
+body, html {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+/* Título Estático */
+.static-header {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255); /* Un poco más tenue que el resto */
+  margin-bottom: 0%; /* Espacio antes del typewriter */
+  font-weight: 200;
+}
+/* Texto arriba a la izquierda */
+.intro_sec .text {
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: flex-start;
+  text-align: left;
+  color: white;
+  box-sizing: border-box;
+
+  /* --- COORDENADAS AQUÍ --- */
+  padding-top: 300px;    /* Ajusta la altura desde el borde superior */
+  padding-left: 150px;   /* Ajusta la distancia desde el borde izquierdo */
+}
+
+/* Typewriter */
+#typewriter,
+#typewriter-sub {
+  display: inline-block;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Typewriter Ajustado */
+#typewriter,
+#typewriter-sub {
+  display: block; /* Cambiado a block para controlar el ancho */
+  width: 0; /* Empieza en 0 */
+  border-right: 3px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 10px; /* Separación entre líneas */
+}
+/* --- CAPA DE OSCURECIMIENTO (OVERLAY) --- */
+.intro_sec .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  /* Color negro con 50% de opacidad (ajusta el 0.5 a tu gusto) */
+  background-color: rgba(0, 0, 0, 0.5); 
+  
+  z-index: 2; /* Por encima del video, debajo del texto */
+}
+/* Animaciones */
+@keyframes typing {
+  /* En lugar de 100% (que es todo el ancho del padre), 
+     usamos un valor que cubra tu frase o fit-content */
+  from { width: 0 }
+  to { width: fit-content } 
+}
+
+/* Si fit-content te da problemas en navegadores antiguos, 
+   puedes usar un ch (caracteres) aproximado: 
+   to { width: 25ch; } 
+*/
+
+#typewriter {
+  font-size: 1.5em; /* Equivalente a unos 48px */
+  animation: typing 3s steps(30) forwards, blink 0.7s step-end infinite;
+}
+
+/* Tamaño específico para la segunda línea */
+#typewriter-sub {
+  font-size: 1rem; /* Equivalente a unos 24px */
+  animation: typing 5s steps(30) forwards 3s, blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}

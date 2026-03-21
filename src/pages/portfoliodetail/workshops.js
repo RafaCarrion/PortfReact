@@ -6,11 +6,13 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import ImageGallery from "../../components/ImageGallery";
 import img_workshop1 from "../../assets/images/berkleeWorkShop1.jpg";
 import img_workshop2 from "../../assets/images/berkleeWorkShop2.jpg";
+import img_workshop3 from "../../assets/images/BerkleeWorkshopGameAudio1.jpeg";
 
 export const WorkshopsPage = () => {
   const images = [
     img_workshop1,  // reemplaza con tus imports
-    img_workshop2
+    img_workshop2,
+    img_workshop3
   ];
 
   return (
