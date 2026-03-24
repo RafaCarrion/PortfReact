@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes, Navigate } from "react-router-dom";
+import { Route, Routes, Navigate, useLocation } from "react-router-dom";
 import withRouter from "../hooks/withRouter"
 import { Portfolio } from "../pages/portfolio";
 import { ContactUs } from "../pages/contact";
@@ -37,10 +37,13 @@ const AnimatedRoutes = withRouter(({ location }) => (
 ));
 
 function AppRoutes() {
+  const location = useLocation();
+  const hideSocialForHomeWithVideo = location.pathname === "/homewithvideo" || location.pathname === "/";
+
   return (
     <div className="s_c">
       <AnimatedRoutes />
-      <Socialicons />
+      {!hideSocialForHomeWithVideo && <Socialicons />}
     </div>
   );
 }
