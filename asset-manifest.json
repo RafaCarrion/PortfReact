@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/PortfReact/static/css/main.410de427.css",
-    "main.js": "/PortfReact/static/js/main.69f4bb69.js",
+    "main.js": "/PortfReact/static/js/main.a2d5cab8.js",
     "static/media/switch.png": "/PortfReact/static/media/switch.d972b49e017150f5d725.png",
     "static/media/berkleeWorkShop2.jpg": "/PortfReact/static/media/berkleeWorkShop2.e87167ce795c0102beb7.jpg",
     "static/media/BerkleeWorkshopGameAudio1.jpeg": "/PortfReact/static/media/BerkleeWorkshopGameAudio1.48a0f0fc2617ce385ce1.jpeg",
     "static/media/berkleeWorkShop1.jpg": "/PortfReact/static/media/berkleeWorkShop1.f08b08a838a7184dc065.jpg",
     "static/media/colrun.jpg": "/PortfReact/static/media/colrun.fdfff87730b8fd3cc060.jpg",
     "index.html": "/PortfReact/index.html",
-    "static/media/Background Composition.mp4": "/PortfReact/static/media/Background Composition.d6f94da39f4bbd9e8d36.mp4",
+    "static/media/Background Composition.mov": "/PortfReact/static/media/Background Composition.e75516c4a790a1d1954b.mov",
     "static/media/roca.mp4": "/PortfReact/static/media/roca.9b25bb8a8c42414f9761.mp4",
     "main.410de427.css.map": "/PortfReact/static/css/main.410de427.css.map",
-    "main.69f4bb69.js.map": "/PortfReact/static/js/main.69f4bb69.js.map"
+    "main.a2d5cab8.js.map": "/PortfReact/static/js/main.a2d5cab8.js.map"
   },
   "entrypoints": [
     "static/css/main.410de427.css",
-    "static/js/main.69f4bb69.js"
+    "static/js/main.a2d5cab8.js"
   ]
 }
