@@ -65,6 +65,7 @@ const Home = () => {
             </div>
 
             <div className="text">
+                <h1 className="main-title">Mi Portafolio</h1>
                 <span className="static-header">Programmer and Sound Designer</span>
                 <span id="typewriter">{currentText}</span>
             </div>
