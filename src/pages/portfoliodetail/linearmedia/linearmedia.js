@@ -5,8 +5,6 @@ import Fullscreen from "../../../components/fullscreen/fullscreen"
 // ── Componentes reutilizables ──────────────────────────────
 import VideoGrid from "../../../components/videogrid/videogrid";
 // ── Assets ────────────────────────────────────────────────
-import img1 from "../../..//assets/images/berkleeWorkShop1.jpg";
-import img2 from "../../../assets/images/berkleeWorkShop1.jpg";
 import roca from  "../../../assets/videos/roca.mp4"
 // ── Videos Commercial ────────────────────────────────────────────────
 
@@ -15,7 +13,6 @@ const videos = [
   { videoId: "kJQP7kiw5Fk" },
   { videoId: "3JZ_D3ELwOQ" },
 ];
-const images = [img1, img2];
 
 export default function LinearMedia() {
   return (

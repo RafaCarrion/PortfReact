@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 // Importa los iconos que necesites (ejemplo usando react-icons/fa)
-import { FaGithub, FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa"; 
-import { logotext, socialprofils } from "../../content_option";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"; 
+import { socialprofils } from "../../content_option";
 import roca from "../../assets/videos/Background Composition.mov";
 import "./style.css";
 

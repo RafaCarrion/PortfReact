@@ -34,6 +34,7 @@ const VideoItem = ({ videoId, imageThumbnail }) => {
         >
           <iframe
             src={`https://www.youtube-nocookie.com/embed/${videoId}?rel=0&autoplay=1`}
+            title="Embedded YouTube Video"
             allowFullScreen
           />
         </div>

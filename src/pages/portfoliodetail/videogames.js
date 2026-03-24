@@ -7,10 +7,6 @@ import VideoSection from "../../components/VideoSection";
 
 
 // ── Assets ────────────────────────────────────────────────
-import img1 from "../../assets/images/berkleeWorkShop1.jpg";
-import img2 from "../../assets/images/berkleeWorkShop1.jpg";
-
-const images = [img1, img2];
 
 export default function VideoGamesPage() {
   return (
