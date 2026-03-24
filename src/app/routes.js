@@ -31,7 +31,7 @@ const AnimatedRoutes = withRouter(({ location }) => (
         <Route path="/portfoliodetail/workshops"  element={<WorkshopsPage />} />
         <Route path="/portfoliodetail/videogames" element={<VideoGamesPage />} />
         <Route path="/portfoliodetail/linearmedia/" element={<LinearMedia/>} />
-        <Route path="*" element={<Home />} />
+        <Route path="*" element={<Navigate replace to="/homewithvideo" />} />
       </Routes>
     </CSSTransition>
   </TransitionGroup>
