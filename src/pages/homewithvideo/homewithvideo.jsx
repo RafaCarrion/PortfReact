@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 // Importa los iconos que necesites (ejemplo usando react-icons/fa)
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"; 
 import { socialprofils } from "../../content_option";
-import roca from "../../assets/videos/Background Composition.mov";
+import video_bg from "../../assets/videos/Background Composition.mov";
 import "./style.css";
 
 const texts = [
@@ -40,7 +40,7 @@ const Home = () => {
             <div className="overlay"></div>
             <video
                 className="home_video"
-                src={roca}
+                src={video_bg}
                 autoPlay
                 muted
                 loop
