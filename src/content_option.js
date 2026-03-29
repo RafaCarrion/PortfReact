@@ -1,7 +1,6 @@
 import img_workshop1 from "./assets/images/berkleeWorkShop1.jpg";
 import img_switch from "./assets/images/switch.png";
 import colrun from "./assets/images/colrun.jpg";
-import { FaInstagram } from "react-icons/fa";
 
 const logotext = "Rafa Carrion";
 const meta = {

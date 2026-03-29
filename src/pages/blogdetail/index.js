@@ -2,7 +2,7 @@ import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { blogdata, meta } from "../../content_option";
+import { blogdata } from "../../content_option";
 import "../blog/style.css";
 
 export const BlogDetail = () => {
@@ -26,7 +26,7 @@ export const BlogDetail = () => {
           <title> {article.title} | Blog </title>
           <meta name="description" content={article.description} />
         </Helmet>
-        
+
         {/* Background Decors */}
         <div className="blog_glow blog_glow_1"></div>
         <div className="blog_glow blog_glow_2"></div>
@@ -47,7 +47,7 @@ export const BlogDetail = () => {
             <div className="blog_detail_content">
               {article.content}
             </div>
-            
+
             {article.videoId && (
               <div className="video_container ratio ratio-16x9">
                 <iframe

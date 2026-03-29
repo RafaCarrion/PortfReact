@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes, Navigate, useLocation } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import withRouter from "../hooks/withRouter"
 import { Portfolio } from "../pages/portfolio";
 import { ContactUs } from "../pages/contact";
@@ -25,15 +25,15 @@ const AnimatedRoutes = withRouter(({ location }) => (
     >
       <Routes location={location}>
         <Route exact path="/" element={<Navigate replace to="/homewithvideo" />} />
-        <Route path="/homewithvideo" element={<Homewithvideo/>} />
+        <Route path="/homewithvideo" element={<Homewithvideo />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogDetail />} />
         <Route path="/contact" element={<ContactUs />} />
-        <Route path="/portfoliodetail/workshops"  element={<WorkshopsPage />} />
+        <Route path="/portfoliodetail/workshops" element={<WorkshopsPage />} />
         <Route path="/portfoliodetail/videogames" element={<VideoGamesPage />} />
-        <Route path="/portfoliodetail/linearmedia/" element={<LinearMedia/>} />
+        <Route path="/portfoliodetail/linearmedia/" element={<LinearMedia />} />
         <Route path="*" element={<Navigate replace to="/homewithvideo" />} />
       </Routes>
     </CSSTransition>
