@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PortfReact/static/css/main.410de427.css",
-    "main.js": "/PortfReact/static/js/main.27fddae0.js",
+    "main.css": "/PortfReact/static/css/main.ddb6c5fb.css",
+    "main.js": "/PortfReact/static/js/main.1f5bc58b.js",
     "static/media/background.mp4": "/PortfReact/static/media/background.2f3e8c3dcd79aa53a47f.mp4",
     "static/media/switch.png": "/PortfReact/static/media/switch.d972b49e017150f5d725.png",
     "static/media/berkleeWorkShop2.jpg": "/PortfReact/static/media/berkleeWorkShop2.e87167ce795c0102beb7.jpg",
@@ -10,11 +10,11 @@
     "static/media/colrun.jpg": "/PortfReact/static/media/colrun.fdfff87730b8fd3cc060.jpg",
     "index.html": "/PortfReact/index.html",
     "static/media/roca.mp4": "/PortfReact/static/media/roca.9b25bb8a8c42414f9761.mp4",
-    "main.410de427.css.map": "/PortfReact/static/css/main.410de427.css.map",
-    "main.27fddae0.js.map": "/PortfReact/static/js/main.27fddae0.js.map"
+    "main.ddb6c5fb.css.map": "/PortfReact/static/css/main.ddb6c5fb.css.map",
+    "main.1f5bc58b.js.map": "/PortfReact/static/js/main.1f5bc58b.js.map"
   },
   "entrypoints": [
-    "static/css/main.410de427.css",
-    "static/js/main.27fddae0.js"
+    "static/css/main.ddb6c5fb.css",
+    "static/js/main.1f5bc58b.js"
   ]
 }
