@@ -1,101 +1,180 @@
 .sec_sp {
-    margin-bottom: calc(3rem + 5.128vw)
-    colo
+    margin-bottom: calc(3rem + 5.128vw);
+    position: relative;
+    z-index: 2;
 }
 
-.table td,
-.table th {
+.about-glow {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(5, 91, 123, 0.334) 0%, transparent 70%);
+    filter: blur(50px);
+    z-index: 1;
+    pointer-events: none;
+    border-radius: 50%;
+}
+
+.about-glow-1 { top: 10%; left: -100px; }
+.about-glow-2 { bottom: 20%; right: -100px; }
+
+.section-title {
+    font-size: 3.5rem;
+    font-family: 'Marcellus', serif;
+    font-weight: 700;
+    letter-spacing: -1px;
     color: var(--text-color);
 }
 
 .t_border {
-    border-color: var(--text-color) !important;
+    border-bottom: 2px solid var(--text-color-3) !important;
+    width: 100px;
+    opacity: 1;
 }
 
-.progress-title {
-    font-size: 16px;
-    font-weight: 700;
-    margin: 15px 0 20px;
-    font-family: 'Raleway';
-}
-
-.progress {
-    height: 5px;
-    background: var(--secondary);
-    border-radius: 0;
-    box-shadow: none;
-    margin-bottom: 30px;
-    overflow: visible;
-}
-
-.progress .progress-bar {
+/* Timeline Styles */
+.timeline {
     position: relative;
-    background: var(--text-color);
-    animation: animate-positive 2s;
-    overflow: visible;
-    opacity: 0.9;
+    padding-left: 20px;
 }
 
-.progress .progress-value {
+.timeline::before {
+    content: '';
     position: absolute;
-    top: -30px;
-    right: 8px;
-    font-size: 17px;
-    font-weight: bold;
-    font-style:italic;
-    color: var(--text-color);
+    left: 0;
+    top: 5px;
+    bottom: 5px;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.1);
 }
 
-@-webkit-keyframes animate-positive {
-    0% {
-        width: 0%;
-    }
+.timeline-item {
+    position: relative;
+    padding-bottom: 2.5rem;
+    padding-left: 20px;
 }
 
-@keyframes animate-positive {
-    0% {
-        width: 0%;
-    }
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -24px;
+    top: 8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--text-color-3);
+    box-shadow: 0 0 10px var(--text-color-3);
 }
 
-.section-title {
-    font-size: 45px;
+.job-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.job-where {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0.25rem;
+}
+
+.job-date {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-color-3);
+    text-transform: uppercase;
+}
+
+/* Modern Skills */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: calc(50% - 0.75rem);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.skill-card:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: var(--text-color-3);
+    transform: translateY(-5px);
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.skill-name {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.skill-percent {
+    font-size: 0.85rem;
+    color: var(--text-color-3);
+}
+
+.skill-progress-bg {
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.skill-progress-fill {
+    height: 100%;
+    background: var(--text-color-3);
+    border-radius: 2px;
+    box-shadow: 0 0 10px var(--text-color-3);
+    width: 0;
+    transition: width 1.5s cubic-bezier(0.1, 0, 0.2, 1);
+}
+
+/* Service Glassmorphism */
+.service-glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.service-glass:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
 }
 
 .service__title {
-    padding: 8px 0;
-    border-bottom: solid 2px var(--secondary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
 }
 
-.service-section .service-category-title {
-    padding-bottom: 4px;
+.service_desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
 }
 
-
-/*! CSS Used keyframes */
-
-@-webkit-keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
+@media (max-width: 767px) {
+    .skill-card {
+        width: 100%;
     }
-    to {
-        opacity: 1;
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-    }
-}
-
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-    }
-    to {
-        opacity: 1;
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
+    .section-title {
+        font-size: 2.5rem;
     }
 }

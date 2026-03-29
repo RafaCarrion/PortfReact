@@ -1,8 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-// Importa los iconos que necesites (ejemplo usando react-icons/fa)
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"; 
-import { socialprofils } from "../../content_option";
 import video_bg from "../../assets/videos/background.mp4";
 import "./style.css";
 
@@ -18,7 +15,7 @@ const Home = () => {
     const [charIndex, setCharIndex] = useState(0);
 
     useEffect(() => {
-        if (index >= texts.length) return; 
+        if (index >= texts.length) return;
         if (charIndex < texts[index].length) {
             const timeout = setTimeout(() => {
                 setCurrentText((prev) => prev + texts[index][charIndex]);
@@ -29,7 +26,7 @@ const Home = () => {
             const timeout = setTimeout(() => {
                 setCurrentText("");
                 setCharIndex(0);
-                setIndex(index + 1 >= texts.length ? 0 : index + 1); 
+                setIndex(index + 1 >= texts.length ? 0 : index + 1);
             }, 1000);
             return () => clearTimeout(timeout);
         }
@@ -46,27 +43,10 @@ const Home = () => {
                 loop
                 playsInline
             />
-            
-            {/* --- NUEVA BARRA SOCIAL IZQUIERDA CON LOGOS --- */}
-            <div className="social-sidebar">
-                <a href={socialprofils.github} target="_blank" rel="noopener noreferrer" title="Github">
-                    <FaGithub />
-                </a>
-                <a href={socialprofils.linkedin} target="_blank" rel="noopener noreferrer" title="Linkedin">
-                    <FaLinkedin />
-                </a>
-                <a href={socialprofils.twitter} target="_blank" rel="noopener noreferrer" title="Twitter">
-                    <FaTwitter />
-                </a>
-                {/* Ejemplo si también tienes facebook en tu config */}
-                {/* <a href={socialprofils.facebook} target="_blank" rel="noopener noreferrer" title="Facebook">
-                    <FaFacebook />
-                </a> */}
-            </div>
 
             <div className="text">
-                <h1 className="main-title">Mi Portafolio</h1>
-                <span className="static-header">Programmer and Sound Designer</span>
+                <h1 className="main-title">Rafa Carrion</h1>
+                <span className="static-header">Multidisciplinary Audio Engineer</span>
                 <span id="typewriter">{currentText}</span>
             </div>
 
