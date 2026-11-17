@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 import withRouter from "../hooks/withRouter"
 import { Portfolio } from "../pages/portfolio";
-import { ContactUs } from "../pages/contact";
+// import { ContactUs } from "../pages/contact"; // Contact oculto temporalmente
 import { About } from "../pages/about";
 import { Socialicons } from "../components/socialicons";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
@@ -30,7 +30,7 @@ const AnimatedRoutes = withRouter(({ location }) => (
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogDetail />} />
-        <Route path="/contact" element={<ContactUs />} />
+        {/* <Route path="/contact" element={<ContactUs />} /> */}
         <Route path="/portfoliodetail/workshops" element={<WorkshopsPage />} />
         <Route path="/portfoliodetail/videogames" element={<VideoGamesPage />} />
         <Route path="/portfoliodetail/linearmedia/" element={<LinearMedia />} />

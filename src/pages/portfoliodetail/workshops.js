@@ -9,13 +9,23 @@ import img_workshop1 from "../../assets/images/berkleeWorkShop1.jpg";
 import img_workshop2 from "../../assets/images/berkleeWorkShop2.jpg";
 import img_workshop3 from "../../assets/images/BerkleeWorkshopGameAudio1.jpeg";
 
-export const WorkshopsPage = () => {
-  const images = [
-    img_workshop1,  // reemplaza con tus imports
-    img_workshop2,
-    img_workshop3
-  ];
+const images = [
+  img_workshop1,  // reemplaza con tus imports
+  img_workshop2,
+  img_workshop3
+];
 
+// Contenido reutilizable (también se muestra en /portfolio)
+export const WorkshopsContent = () => (
+  <ImageGallery
+    images={images}
+    tags={["Unity 3D", "C#", "Wwise", "Fmod"]}
+    githubUrl="https://github.com/tuusuario/gold-game"
+  // demoUrl="https://tu-demo.com"   ← descomenta si tienes demo
+  />
+);
+
+export const WorkshopsPage = () => {
   return (
     <HelmetProvider>
       <Container className="pd_container_main">
@@ -41,12 +51,7 @@ export const WorkshopsPage = () => {
               </Link>
             </Col>
           </Row>
-          <ImageGallery
-            images={images}
-            tags={["Unity 3D", "C#", "Wwise", "Fmod"]}
-            githubUrl="https://github.com/tuusuario/gold-game"
-          // demoUrl="https://tu-demo.com"   ← descomenta si tienes demo
-          />
+          <WorkshopsContent />
         </div>
       </Container>
     </HelmetProvider>

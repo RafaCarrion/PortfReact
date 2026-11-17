@@ -22,7 +22,7 @@ const VideoSection = ({ videoId, title, description, steamUrl, tags }) => (
           </a>
         )}
       </div>
-      <h5 className="pd_section_title">Tecnologías</h5>
+      <h5 className="pd_section_title">Stack</h5>
       <div>
         {tags?.map((t, i) => (
           <span key={i} className="pd_tag">{t}</span>

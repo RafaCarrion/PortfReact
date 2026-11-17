@@ -69,7 +69,7 @@ export const PortfolioDetail = () => {
           <Col lg="4" className="pd_sidebar">
             {/* Tecnologías */}
             <div className="pd_section">
-              <h5 className="pd_section_title">Tecnologías</h5>
+              <h5 className="pd_section_title">Stack</h5>
               <div className="pd_tags">
                 {project.tech.map((t, i) => (
                   <span key={i} className="pd_tag">

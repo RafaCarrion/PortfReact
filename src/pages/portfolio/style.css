@@ -135,3 +135,94 @@
         font-size: 2.5rem;
     }
 }
+/* ── Pestañas de categorías (sticky) ── */
+.po_tabs {
+    position: sticky;
+    top: 70px;
+    z-index: 20;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding: 0.75rem;
+    margin-bottom: 3rem;
+    border-radius: 40px;
+    background: var(--overlay-color);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    width: fit-content;
+    max-width: 100%;
+}
+
+.po_tab {
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--text-color);
+    font-family: 'Marcellus', serif;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    border-radius: 30px;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.po_tab:hover {
+    opacity: 1;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.po_tab.active {
+    opacity: 1;
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+/* ── Secciones ── */
+.po_sections {
+    position: relative;
+    z-index: 2;
+}
+
+.po_section {
+    scroll-margin-top: 150px;
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.po_section:last-child {
+    border-bottom: none;
+}
+
+.po_section_head {
+    margin-bottom: 2rem;
+}
+
+.po_section_title {
+    font-family: 'Marcellus', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.po_section_sub {
+    color: var(--text-color);
+    opacity: 0.6;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .po_tabs {
+        top: 60px;
+        border-radius: 16px;
+        padding: 0.5rem;
+    }
+    .po_tab {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+    .po_section_title {
+        font-size: 1.8rem;
+    }
+}

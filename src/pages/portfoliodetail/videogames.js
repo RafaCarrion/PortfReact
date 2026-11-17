@@ -6,6 +6,26 @@ import { Link } from "react-router-dom";
 // ── Componentes reutilizables ──────────────────────────────
 import VideoSection from "../../components/VideoSection";
 
+// Contenido reutilizable (también se muestra en /portfolio)
+export const VideoGamesContent = () => (
+  <>
+    <VideoSection
+      videoId="4qwmdyZns3Q"
+      title="Gold Gold Adventure Gold"
+      description="In this world, it’s all about the gold! Use it to build up a fantasy town, recruit heroes, give quests, raise a Godbeast, cast powerful spells, and expand your influence—all one gold coin at a time."
+      steamUrl="https://store.steampowered.com/app/3133650"
+      tags={["Unity 3D", "C#", "Wwise"]}
+    />
+    <VideoSection
+      videoId="q7JfhZ5yVT0?si=sL7sc2XzdNkCRCuH"
+      title="Islanders"
+      description="ISLANDERS is a minimalist strategy game about building cities on colorful islands."
+      steamUrl="https://store.steampowered.com/app/2368930/ISLANDERS_New_Shores/"
+      tags={["Unity 3D", "C#", "Fmod"]}
+    />
+  </>
+);
+
 export default function VideoGamesPage() {
   return (
     <HelmetProvider>
@@ -34,20 +54,7 @@ export default function VideoGamesPage() {
           </Row>
 
           {/* VIDEO + DESCRIPCIÓN CORTA */}
-          <VideoSection
-            videoId="4qwmdyZns3Q"
-            title="Gold Gold Adventure Gold"
-            description="El oro domina el mundo. Disfruta del caos de la construcción de ciudades..."
-            steamUrl="https://store.steampowered.com/app/3133650"
-            tags={["Unity 3D", "C#", "Wwise"]}
-          />
-          <VideoSection
-            videoId="q7JfhZ5yVT0?si=sL7sc2XzdNkCRCuH"
-            title="Islanders"
-            description="Esto es ISLANDERS: New Shores. Construye un retiro isleño en un mundo tranquilo y minimalista. Disfruta de las nuevas y emocionantes funciones que mantienen el encanto de siempre a la vez que inspiran una creatividad renovada."
-            steamUrl="https://store.steampowered.com/app/2368930/ISLANDERS_New_Shores/"
-            tags={["Unity 3D", "C#", "Fmod"]}
-          />
+          <VideoGamesContent />
         </div>
       </Container>
     </HelmetProvider>

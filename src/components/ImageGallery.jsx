@@ -29,8 +29,7 @@ const ImageGallery = ({ images, tags = [], githubUrl, demoUrl }) => {
       <Col lg="4" className="pd_sidebar">
         {tags.length > 0 && (
           <div className="pd_section">
-             <p>En los workshops se ttrantan temas como implementación en el game engine.
-              Implementacion de middleware.
+             <p>Berklee College of Music workshops: Game engine implementation and middleware integration.
              </p>
           </div>
         )}

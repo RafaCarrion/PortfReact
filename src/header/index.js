@@ -3,6 +3,7 @@ import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link, useLocation } from "react-router-dom";
 import { logotext, socialprofils } from "../content_option";
+import { portfolioSections } from "../pages/portfolio";
 
 const Headermain = () => {
   const [isActive, setActive] = useState("false");
@@ -41,6 +42,13 @@ const Headermain = () => {
                   </li>
                   <li className="menu_item">
                     <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Portfolio</Link>
+                    <ul className="menu_sub">
+                      {portfolioSections.map(({ id, title }) => (
+                        <li key={id}>
+                          <Link onClick={handleToggle} to={`/portfolio#${id}`}>{title}</Link>
+                        </li>
+                      ))}
+                    </ul>
                   </li>
                   <li className="menu_item">
                     <Link  onClick={handleToggle} to="/blog" className="my-3"> Blog</Link>
@@ -48,9 +56,11 @@ const Headermain = () => {
                   <li className="menu_item">
                     <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
                   </li>
+                  {/* Contact oculto temporalmente
                   <li className="menu_item">
                     <Link onClick={handleToggle} to="/contact" className="my-3"> Contact</Link>
                   </li>
+                  */}
                 </ul>
               </div>
             </div>

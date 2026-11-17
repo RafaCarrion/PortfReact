@@ -205,3 +205,28 @@
     margin-right: 10px;
     text-decoration: none;
 }
+/* ── Submenú de Portfolio ── */
+.menu_sub {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.25rem 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+}
+
+.menu_sub a {
+    font-family: Marcellus;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-color-2);
+    opacity: 0.6;
+    text-decoration: none;
+    transition: opacity 0.25s ease;
+}
+
+.menu_sub a:hover {
+    opacity: 1;
+    color: var(--text-color-2);
+}

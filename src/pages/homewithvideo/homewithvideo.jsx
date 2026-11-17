@@ -54,7 +54,8 @@ const Home = () => {
             <nav className="side-nav">
                 <Link to="/portfolio" className="side-link">Portfolio</Link>
                 <Link to="/about" className="side-link">About</Link>
-                <Link to="/contact" className="side-link">Contact</Link>
+                {/* Contact oculto temporalmente */}
+                {/* <Link to="/contact" className="side-link">Contact</Link> */}
             </nav>
         </section>
     );

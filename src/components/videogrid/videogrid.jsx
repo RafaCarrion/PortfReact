@@ -12,7 +12,9 @@ const VideoItem = ({ videoId, imageThumbnail }) => {
     setIsZoomed(false);
   };
 
-  const thumbnail = imageThumbnail;
+  // Si no se pasa miniatura, usa la de YouTube
+  const cleanId = videoId.split("?")[0];
+  const thumbnail = imageThumbnail || `https://img.youtube.com/vi/${cleanId}/hqdefault.jpg`;
 
   return (
     <>
@@ -48,7 +50,7 @@ const VideoItem = ({ videoId, imageThumbnail }) => {
 const VideoGrid = ({ videos }) => (
   <div className="video_grid">
     {videos.map((v, i) => (
-      <VideoItem key={i} videoId={v.videoId} />
+      <VideoItem key={i} videoId={v.videoId} imageThumbnail={v.imageThumbnail} />
     ))}
   </div>
 );

@@ -45,6 +45,7 @@ export const Home = () => {
                       <div className="ring three"></div>
                     </div>
                   </Link>
+                  {/* Contact oculto temporalmente
                   <Link to="/contact">
                     <div id="button_h" className="ac_btn btn">
                       Contact Me
@@ -53,6 +54,7 @@ export const Home = () => {
                       <div className="ring three"></div>
                     </div>
                   </Link>
+                  */}
                 </div>
               </div>
             </div>

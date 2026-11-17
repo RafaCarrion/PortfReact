@@ -9,10 +9,16 @@ import VideoGrid from "../../../components/videogrid/videogrid";
 import roca from  "../../../assets/videos/roca.mp4"
 
 const videos = [
+  { videoId: "F9Enw2qPlf0" },
+  { videoId: "qzAQEAUp8xY" },
+  { videoId: "dXJis4FEMM0" },
   { videoId: "6n2y2CfXEQs?si=IQEc9_vtDbf5BItc" },
-  { videoId: "kJQP7kiw5Fk" },
-  { videoId: "3JZ_D3ELwOQ" },
+  { videoId: "o1JtsXr5i1k" },
+  { videoId: "A9c6Hx5Mfcc" },
 ];
+
+// Contenido reutilizable (también se muestra en /portfolio)
+export const LinearMediaContent = () => <VideoGrid videos={videos} />;
 
 export default function LinearMedia() {
   return (
@@ -43,7 +49,7 @@ export default function LinearMedia() {
             </Col>
           </Row>
           {/* ------------ VIDEOS----------- */}
-          <VideoGrid videos={videos} />
+          <LinearMediaContent />
         </div>
       </Container>
     </HelmetProvider>
