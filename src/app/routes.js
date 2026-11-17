@@ -10,7 +10,7 @@ import { WorkshopsPage } from "../pages/portfoliodetail/workshops";
 import VideoGamesPage from "../pages/portfoliodetail/videogames";
 import LinearMedia from "../pages/portfoliodetail/linearmedia/linearmedia";
 import Homewithvideo from "../pages/homewithvideo/homewithvideo"
-import { Blog } from "../pages/blog";
+// import { Blog } from "../pages/blog";
 import { BlogDetail } from "../pages/blogdetail";
 const AnimatedRoutes = withRouter(({ location }) => (
   <TransitionGroup>
@@ -28,7 +28,7 @@ const AnimatedRoutes = withRouter(({ location }) => (
         <Route path="/homewithvideo" element={<Homewithvideo />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/blog" element={<Blog />} />
+        {/* <Route path="/blog" element={<Blog />} /> */}
         <Route path="/blog/:id" element={<BlogDetail />} />
         {/* <Route path="/contact" element={<ContactUs />} /> */}
         <Route path="/portfoliodetail/workshops" element={<WorkshopsPage />} />

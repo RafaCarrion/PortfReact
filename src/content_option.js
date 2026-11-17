@@ -21,16 +21,24 @@ const introdata = {
 };
 
 const dataabout = {
-    title: "abit about my self",
-    aboutme: `As an audio and Systems Engineer, I manage the infrastructure of over 40 music studios/music labs, designing scalable, automated systems that ensure reliability and efficiency. My work includes containerized deployments with Docker, orchestration through an Ansible cluster, and the development of SQL-based APIs for system scanning, monitoring, and maintenance.
-    I focus on automation, stability, and infrastructure resilience in environments where downtime directly impacts creative production.
-    Alongside my infrastructure role, I work in game audio and sound design, backed by an engineering degree and a Master’s in Video Game Programming (Unity3D). This dual expertise allows me to bridge creative workflows with robust technical implementation, from studio infrastructure to interactive audio systems in games.
-    I am particularly interested in hybrid roles where infrastructure, automation, and creative technology intersect.`,
+    title: "Rafa Carrion",
+    // Cada elemento es un párrafo
+    aboutme: [
+        "I'm a sound designer and game audio artist. I care about how a game feels: the weight of a footstep, the texture of a world, the way a sound tells the player something before they see it. Every project starts for me with an artistic idea, and ends with that idea working inside the engine.",
+        "What makes my approach different is the technology behind it. I'm an engineer with a Master's in Video Game Programming (Unity3D), and I implement my own audio with Wwise, FMOD and native audio in Unity and Unreal Engine 5. I design the sounds and then build the systems that make them react to gameplay, so nothing gets lost between the creative intent and the final result.",
+        "That technical background also drives my work as Technology Coordinator at Berklee College of Music Valencia, where I keep more than 40 music studios and labs running, automated with Docker, Ansible and custom SQL-based APIs. Working where downtime stops creative work taught me to treat reliability as part of the craft.",
+        "I'm at my best where art and technology meet: shaping how a game sounds, and engineering how that sound comes to life.",
+    ],
 };
 const worktimeline = [{
-    jobtitle: "Technology Coordinator",
+    jobtitle: "IT and Technology Coordinator",
     where: "Berklee College of Music",
-    date: "2023",
+    date: "current",
+},
+{
+    jobtitle: "Engineering studio assistant",
+    where: "Berklee College of Music",
+    date: "2021- 2023",
 },
 {
     jobtitle: "Sound Designer & Audio Programmer",
@@ -41,6 +49,16 @@ const worktimeline = [{
     jobtitle: "Sound Designer & Audio Programmer",
     where: "Islanders",
     date: "2024",
+},
+{
+    jobtitle: "Sound design, mixing and mastering for linear media",
+    where: "Banjo Soundscapes",
+    date: "2022 - 2023",
+},
+{
+    jobtitle: "Project Manager CNC and manufacturing",
+    where: "Air Nostrum",
+    date: "2016 - 2019",
 },
 ];
 
@@ -75,12 +93,20 @@ const skills = [{
 ];
 
 const services = [{
-    title: "Game Audio",
-    description: "From sound design to audio programming, I can help you with your game audio needs.",
+    title: "Sound Design for Games",
+    description: "Creating the sonic identity of a game: ambiences, effects and interactive soundscapes that support the art direction and the gameplay.",
 },
 {
-    title: "Systems Engineering",
-    description: "Setting up and maintaining audio systems.",
+    title: "Audio Implementation & Programming",
+    description: "Bringing sound to life in the engine with Wwise, FMOD, Unity and Unreal Engine 5: adaptive systems, real-time parameters and optimised audio pipelines.",
+},
+{
+    title: "Sound Design for Linear Media",
+    description: "Sound design, mixing and mastering for trailers, commercials and other linear media.",
+},
+{
+    title: "Audio Systems Engineering",
+    description: "Designing, automating and maintaining studio and audio infrastructure.",
 },
 {
     title: "Workshops and Education",

@@ -38,9 +38,11 @@ export const About = () => {
           <Col lg="1"></Col>
           <Col lg="6" className="d-flex align-items-center">
             <div className="about-me-text">
-              <p className="lead" style={{ fontSize: '1.2rem', color: 'rgba(255,255,255,0.85)' }}>
-                {dataabout.aboutme}
-              </p>
+              {[].concat(dataabout.aboutme).map((para, i) => (
+                <p key={i} className="lead" style={{ fontSize: '1.2rem', color: 'rgba(255,255,255,0.85)' }}>
+                  {para}
+                </p>
+              ))}
             </div>
           </Col>
         </Row>
